@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+img.active{
+ float: left;
+ height:63px;
+ width:207px;
+}
+
+
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    
+}
+
+.header li {
+    float: right;
+}
+
+.header li a {
+  font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: #79b530;
+}
+
+
+div.contenedor_usuario{
+ position: fixed;
+width: 14%;
+height: 100%;
+background-color: #212121;
+}
+div.contenedor{
+padding-top: 5%;
+
+color: white;
+}
+
+.informacion-texto{
+  list-style-type: none;
+
+}
+.informacion-texto h3{
+  font-size: 30px;
+}
+
+div.datos{
+  font-weight: 400;
+}
+h2{
+font-weight: 300;
+}
+/*
+
+
+body{
+  background-color: #B7F44F;
+}
+.contenedor-login{
+  padding:10% 30% 10% 30%;
+  display: inline-block;
+  color:white;
+}
+section.logo{
+padding-bottom:70%;
+background-color: #fff;
+border-top-left-radius: 4%;
+border-top-right-radius: 4%;
+
+}
+
+section.formulario{
+  background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+ //*#ffffff, #cbe86b, #f2e9e1, #1c140d, #79b530 */
+
+
+*/
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+.conalep{
+  background-color:#79B530;
+}
