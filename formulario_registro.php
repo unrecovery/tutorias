@@ -16,62 +16,55 @@ include 'navbar_titular.php';
 ?>
 
 <body>
-  <div class="container p-3">
-
-    <div class="row">
-      <div class="col-md-8">
-        <h2>Registro de Estudiante para Tutorias</h2>
-        <div class="card-body">
-          <form action="#" class="form-inline" role="form">
-            <div class="form-row">
-              <div class="form-group col-md-5">
-                <label for="nombre" class="col-form-label">Nombre Completo:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre Estudiante">
-              </div>
-
-            </div>
-            <div class="form-group col-md-5">
-              <label for="curp" class="col-form-label">CURP</label>
-              <input type="text" class="form-control" id="curp" placeholder="TOHA530902HSPRRN07">
-            </div>
-            <div class="form-group">
-              <label for="direccion" class="col-form-label">Direccion</label>
-              <input type="text" class="form-control" id="direccion" placeholder="Nombre de Calle y Numero de calle">
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="City" class="col-form-label">City</label>
-                <input type="text" class="form-control" id="City" placeholder="City">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="State" class="col-form-label">State</label>
-                <select id="State" class="form-control">
-                  <option value="Municipio">Seleccione Municipio</option>
-                  <option value="balancan">Balancan</option>
-                </select>
-
-              </div>
-              <div class="form-group col-md-2">
-                <label for="Zip" class="col-form-label">Zip</label>
-                <input type="text" class="form-control" id="Zip">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember me
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+  <div class="contenedor-fuera" style="padding-left:11%;">
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="nombre" class="col-form-label">Nombre Completo:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre Estudiante">
+          </div>
+          <div class="col">
+            <label for="matricula" class="col-form-label">Matricula:</label>
+            <input type="text" class="form-control" id=matricula placeholder="Matricula">
+          </div>
+          <div class="col">
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="nacimiento" placeholder="Seleccione Fecha">
+          </div>
+          <div class=" col">
+            <label for="curp" class="col-form-label">CURP</label>
+            <input type="text" class="form-control" id="curp" placeholder="TOHA530902HSPRRN07">
+          </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col">
+            <label for="ciudad" class="col-form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
+          </div>
+          <div class="col">
+            <label for="direccion" class="col-form-label">Direccion</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Nombre de Calle y Numero de calle">
+          </div>
+          <div class="col">
+            <label for="municipio" class="col-form-label">Municipio</label>
+            <input type="text" class="form-control" id="municipio" placeholder="Municipio">
+          </div>
+          <div class="col">
+            <label for="estado" class="col-form-label">Estado</label>
+            <input type="text" class="form-control" id="estado" placeholder="Estado">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="numero" class="col-form-label">Numero De Telefono</label>
+            <input type="number" class="form-control" id="numero" placeholder="Maximo 10 Digitos">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
     </div>
-
   </div>
-
 </body>
 
 </html>
-

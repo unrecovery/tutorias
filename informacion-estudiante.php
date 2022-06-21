@@ -25,50 +25,49 @@ $fila = mysqli_fetch_array($respuesta);
 include 'navbar_titular.php';
 ?>
 
-
 <body>
-  <div class="contenedor-fuera" style="padding-left:10%;">
-    <div class="container mt-3">
-      <h2>Informacion Sobre los Estudiantes en Tutoria</h2>
-      <p>
-      </p>
-      <table class="table table-dark table-hover" style="font-size: 12px;">
-        <thead>
+
+  <div class="container mt-3">
+    <h2>Informacion Sobre los Estudiantes en Tutoria</h2>
+    <p>
+    </p>
+    <table class="table table-dark table-hover" style="font-size: 12px;">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Matricula</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Domicilio</th>
+          <th>Carrera</th>
+          <th>Grupo</th>
+          <th>CURP</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Sexo</th>
+          <th>Telefono</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <?php while ($fila = mysqli_fetch_array($respuesta)) {  ?>
+        <tbody>
           <tr>
-            <th>No.</th>
-            <th>Matricula</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Domicilio</th>
-            <th>Carrera</th>
-            <th>Grupo</th>
-            <th>CURP</th>
-            <th>Fecha de Nacimiento</th>
-            <th>Sexo</th>
-            <th>Telefono</th>
-            <th>Email</th>
+            <td><?php echo $fila[0]; ?></td>
+            <td><?php echo $fila[1] ?></td>
+            <td><?php echo $fila[2] ?></td>
+            <td><?php echo $fila[3] ?></td>
+            <td><?php echo $fila[4] ?></td>
+            <td><?php echo $fila[5] ?></td>
+            <td><?php echo $fila[6] ?></td>
+            <td><?php echo $fila[7] ?></td>
+            <td><?php echo $fila[8] ?></td>
+            <td><?php echo $fila[9] ?></td>
+            <td><?php echo $fila[10] ?></td>
+            <td><?php echo $fila[11] ?></td>
           </tr>
-        </thead>
-        <?php while ($fila = mysqli_fetch_array($respuesta)) {  ?>
-          <tbody>
-            <tr>
-              <td><?php echo $fila[0]; ?></td>
-              <td><?php echo $fila[1] ?></td>
-              <td><?php echo $fila[2] ?></td>
-              <td><?php echo $fila[3] ?></td>
-              <td><?php echo $fila[4] ?></td>
-              <td><?php echo $fila[5] ?></td>
-              <td><?php echo $fila[6] ?></td>
-              <td><?php echo $fila[7] ?></td>
-              <td><?php echo $fila[8] ?></td>
-              <td><?php echo $fila[9] ?></td>
-              <td><?php echo $fila[10] ?></td>
-              <td><?php echo $fila[11] ?></td>
-            </tr>
-          </tbody>
-        <?php  }  ?>
-      </table>
-    </div>
+        </tbody>
+      <?php  }  ?>
+    </table>
+  </div>
   </div>
 </body>
 
