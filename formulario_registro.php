@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/css.css" />
   <title>Registro de Estudiantes - CONALEP TABASCO</title>
@@ -60,6 +61,17 @@ include 'navbar_titular.php';
             <label for="numero" class="col-form-label">Numero De Telefono</label>
             <input type="number" class="form-control" id="numero" placeholder="Maximo 10 Digitos">
           </div>
+          <div class="col">
+            <label for="sexo" class="col-form-label">Sexo</label>
+            <select class="form-select" name="sexo">
+              <option value="no">Seleccione</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Distinto">Prefiero no Decirlo</option>
+            </select>
+          </div>
+          <div class="col" class="col-form-label">Carrera</div>
+
         </div>
         <button type="submit" class="btn btn-primary">Registrar</button>
       </form>

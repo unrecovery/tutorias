@@ -3,7 +3,7 @@
     <div class="header">
         <ul>
             <li style="float:left;"><img class="active" src="https://0201.nccdn.net/4_2/000/000/046/6ea/LogoConalepTabasco-Horiz.jpg#RDAMDAID27061963" alt="Logo conalep"></li>
-            <li><a style="background-color: #e10000;" href="index.html">Cerrar Sesion</a></li>
+            <li><a style="background-color: #e10000;" href="index.php">Cerrar Sesion</a></li>
             <li><a href="#Acerca de">Acerca de</a></li>
             <li><a href="informacion-psp.php">Docentes</a></li>
             <li><a href="informacion-estudiante.php">Seccion Estudiantes</a></li>

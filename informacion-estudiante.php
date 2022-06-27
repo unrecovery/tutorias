@@ -30,6 +30,7 @@ include 'navbar_titular.php';
   <div class="container mt-3">
     <h2>Informacion Sobre los Estudiantes en Tutoria</h2>
     <p>
+      <a href="./formulario_registro.php" class="btn btn-primary">Agregar Estudiante</a>
     </p>
     <table class="table table-dark table-hover" style="font-size: 12px;">
       <thead>

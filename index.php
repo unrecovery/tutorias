@@ -19,15 +19,16 @@
           <img src="https://0201.nccdn.net/4_2/000/000/046/6ea/LogoConalepTabasco-Horiz.jpg#RDAMDAID27061963" class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-          <form>
-            <!-- Email input -->
+          <!-- Formulario-->
+          <form action="./iniciar_sesion.php" method="post" enctype="multipart/form-data">
+            <!-- Input Usuario-->
             <div class="form-outline mb-4">
               <input type="email" id="form3Example3" class="form-control form-contr
               ol-lg" placeholder="Ingrese su Usuario" />
               <label class="form-label" for="form3Example3">Usuario</label>
             </div>
 
-            <!-- Password input -->
+            <!-- Input Password -->
             <div class="form-outline mb-3">
               <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Ingrese Contraseña" />
               <label class="form-label" for="form3Example4">Contraseña</label>
@@ -36,7 +37,7 @@
             <div class="d-flex justify-content-between align-items-center">
 
               <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="button" class="btn btn-dark btn-lg conalep" style="padding-left: 2.5rem; padding-right: 2.5rem;" id="boton">Iniciar Sesion</button>
+                <a href="./panel.php" class="btn btn-dark btn-lg conalep" style="padding-left: 2.5rem; padding-right: 2.5rem;" id="boton">Iniciar Sesion</a>
                 <p class="small fw-bold mt-2 pt-1 mb-0">No recuerda su Contraseña? <a href="panel.php" class="link-success ">Recuperar Contraseña</a></p>
               </div>
 
@@ -60,5 +61,5 @@
 
 </html>
 
-<!--  Kevin Gabriel Rodriguez Mayo / UNRECOVERY.DZ / DYSTOPIA 
+<!--  Kevin Gabriel Rodriguez Mayo / UNRECOVERY.DZ / DYSTOPIA
       Dra. Lizbeth Jacitno Castillo-->
